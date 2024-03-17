@@ -7,7 +7,7 @@ public class collectable : MonoBehaviour
     Rigidbody   body;
     void Start()
     {
-        transform.position = new Vector3(Random.Range(-20, 30), transform.position.y, transform.position.z);
+        transform.position = new Vector3(Random.Range(-10, 10), transform.position.y, transform.position.z);
         body = GetComponent<Rigidbody>();
     }
 

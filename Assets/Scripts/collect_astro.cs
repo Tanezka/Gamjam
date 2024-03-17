@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class collect_astro : MonoBehaviour
@@ -9,7 +9,12 @@ public class collect_astro : MonoBehaviour
     public AudioClip collect_sound;
     public AudioSource audioSource;
     public counter script;
+    Scene scene;
 
+    void    Awake()
+    {
+        scene = SceneManager.GetActiveScene();
+    }
     void    Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -18,7 +23,7 @@ public class collect_astro : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy")
         {
-            Destroy(gameObject);
+            SceneManager.LoadScene(scene.buildIndex);
         }
         if (other.gameObject.tag == "Collectibles")
         {            

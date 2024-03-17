@@ -3996,12 +3996,13 @@ PrefabInstance:
       propertyPath: objectsToDeactivate.Array.data[0]
       value: 
       objectReference: {fileID: 716368508}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6974692325722303941, guid: bf40456382cda9f4580d8cd9741f2e78, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1906141606886690692, guid: bf40456382cda9f4580d8cd9741f2e78, type: 3}
-      insertIndex: -1
+      insertIndex: 4
       addedObject: {fileID: 425248270}
   m_SourcePrefab: {fileID: 100100000, guid: bf40456382cda9f4580d8cd9741f2e78, type: 3}
 --- !u!1001 &654946721
